@@ -26,21 +26,11 @@ namespace MyApp
             Console.WriteLine($"]");
             Console.WriteLine();
         }
-        public static bool IsEven(int n)
-        {
-            if (n % 2 == 0)
-                return true;
-            else return false;
+        public static bool IsEven(int number) => number % 2 == 0;
 
-        }
-        public static bool IsOdd(int n)
-        {
-            if (n % 2 != 0)
-                return true;
-            else return false;
-
+        public static bool IsOdd(int number) => !IsEven(number);
+        
         }
     }
 
         
-}
